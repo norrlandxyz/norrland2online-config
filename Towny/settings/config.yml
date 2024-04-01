@@ -81,7 +81,7 @@ levels:
     namePostfix: ' (Rural)'
     bankCapModifier: 1.0
     mayorPrefix: 'Hermit '
-    townBlockBuyBonusLimit: 25
+    townBlockBuyBonusLimit: 50
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -95,7 +95,7 @@ levels:
     namePostfix: ' (Hamlet)'
     bankCapModifier: 1.0
     mayorPrefix: 'Chief '
-    townBlockBuyBonusLimit: 50
+    townBlockBuyBonusLimit: 100
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -109,7 +109,7 @@ levels:
     namePostfix: ' (Village)'
     bankCapModifier: 1.0
     mayorPrefix: 'Headman '
-    townBlockBuyBonusLimit: 75
+    townBlockBuyBonusLimit: 150
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -123,7 +123,7 @@ levels:
     namePostfix: ' (Town)'
     bankCapModifier: 1.0
     mayorPrefix: 'Viscount '
-    townBlockBuyBonusLimit: 100
+    townBlockBuyBonusLimit: 200
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -137,7 +137,7 @@ levels:
     namePostfix: ' (Large Town)'
     bankCapModifier: 1.0
     mayorPrefix: 'Count Von '
-    townBlockBuyBonusLimit: 125
+    townBlockBuyBonusLimit: 250
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -151,7 +151,7 @@ levels:
     namePostfix: ' (City)'
     bankCapModifier: 1.0
     mayorPrefix: 'Earl '
-    townBlockBuyBonusLimit: 150
+    townBlockBuyBonusLimit: 300
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -165,7 +165,7 @@ levels:
     namePostfix: ' (Large City)'
     bankCapModifier: 1.0
     mayorPrefix: 'Duke '
-    townBlockBuyBonusLimit: 175
+    townBlockBuyBonusLimit: 350
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
@@ -179,7 +179,7 @@ levels:
     namePostfix: ' (Metropol)'
     bankCapModifier: 1.0
     mayorPrefix: 'Lord '
-    townBlockBuyBonusLimit: 200
+    townBlockBuyBonusLimit: 400
     namePrefix: ''
     mayorPostfix: ''
     peacefulCostMultiplier: 1.0
