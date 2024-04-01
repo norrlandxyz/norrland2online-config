@@ -300,7 +300,7 @@ Economy:
     # With this enabled, players will be limited how much they can make in defined time
     # Time in seconds: 60 = 1 min, 3600 = 1 hour, 86400 = 24 hours
     Money:
-      Use: true
+      Use: false
       # Do you want to stop money gain when exp limit reached?
       StopWithExp: false
       # Do you want to stop money gain when point limit reached?
