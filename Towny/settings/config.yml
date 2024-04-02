@@ -943,12 +943,12 @@ claiming:
     # Put in other words: the buffer area around every homeblock that no other town can claim into.
     # Does not affect towns which are in the same nation.
     # This will prevent someone founding a town right on your doorstep
-    min_distance_from_town_homeblock: '32'
+    min_distance_from_town_homeblock: '18'
   
     # Minimum number of plots an outpost must be from any other town's plots.
     # Useful when min_plot_distance_from_town_plot is set to near-zero to allow towns to have claims
     # near to each other, but want to keep outposts away from towns.
-    min_distance_for_outpost_from_plot: '24'
+    min_distance_for_outpost_from_plot: '32'
   
     # Set to 0 to disable. When above 0 an outpost may only be claimed within the given number of townblocks from a townblock owned by the town.
     # Setting this to any value above 0 will stop outposts being made off-world from the town's homeworld.
