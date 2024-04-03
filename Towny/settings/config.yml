@@ -1230,7 +1230,7 @@ plugin:
   
       # The url that players will be prompted to open when clicking on a coordinate in a status screen.
       # Valid placeholders are {world}, {x}, and {y}, for the world name, x, and y coordinates respectively.
-      url: https://norrland.online/map/#{world}:{x}:64:{z}:200:0:0:0:1:flat
+      url: https://map.norrland.online/#{world}:{x}:64:{z}:200:0:0:0:1:flat
   
   day_timer:
   
