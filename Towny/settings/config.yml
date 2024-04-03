@@ -1898,7 +1898,7 @@ economy:
     price_claim_townblock_increase: '1.1'
   
     # The maximum price for an additional townblock. No matter how many blocks a town has the price will not be above this. Set to -1 to deactivate this.
-    max_price_claim_townblock: '1000.0'
+    max_price_claim_townblock: '10000.0'
   
     # The amount refunded to a town when they unclaim a townblock.
     # Warning: do not set this higher than the cost to claim a townblock.
