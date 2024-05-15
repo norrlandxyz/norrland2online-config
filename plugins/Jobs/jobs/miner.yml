@@ -47,6 +47,14 @@ Miner:
       points: 0.25
       experience: 0.5
   Break:
+    basalt:
+      income: 1
+      points: 1
+      experience: 1
+    blackstone:
+      income: 1
+      points: 1
+      experience: 1
     andesite:
       income: 1
       points: 1
