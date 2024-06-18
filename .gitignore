@@ -1,7 +1,6 @@
 *
 !.gitignore
 !README.md
-!server.properties
 !server-icon.png
 !plugins/
 !plugins/Towny
