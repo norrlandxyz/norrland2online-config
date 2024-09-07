@@ -104,6 +104,7 @@ towns:
   - towny.command.nation.join
   - towny.command.nation.leave
   - townycultures.set_town_culture
+  - towny.command.town.set.mapcolor
   
   # Ranks contain additional permissions residents will be
   # granted if they are assigned that specific rank.
@@ -119,6 +120,7 @@ towns:
     - towny.outlaw.jailer
     - towny.command.nation.join
     - towny.command.nation.leave
+    - towny.command.town.set.mapcolor
   
     # assistants are able to grant VIP and helper rank.
     assistant:
@@ -131,6 +133,7 @@ towns:
     - towny.command.town.rank.vip
     - towny.command.town.rank.helper
     - towny.outlaw.jailer
+    - towny.command.town.set.mapcolor
     helper:
     - towny.claimed.townowned.switch.*
   
@@ -148,6 +151,7 @@ nations:
   king:
   - towny.command.nation.*
   - towny.command.nation.deposit.other
+  - towny.command.nation.set.mapcolor
   ranks:
     assistant:
     - towny.command.nation.rank.helper
@@ -155,5 +159,6 @@ nations:
     - towny.command.nation.ally.*
     - towny.command.nation.enemy
     - towny.command.nation.deposit.other
+    - towny.command.nation.set.mapcolor
     helper:
     - towny.command.nation.add
