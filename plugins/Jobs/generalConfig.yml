@@ -87,6 +87,8 @@ Optimizations:
     - Example
     - Worlds
   Explore:
+    # Do you want to use new exploration tracking method. Only for 1.16+ servers
+    NewMethod: true
     # By setting this to true when there is max amount of players explored a chunk then it will be marked as fully explored and exact players who explored it will not be saved to save some memory
     Compact: true
     # While enabled explored chunk data will be saved into database and will persist over server restarts
@@ -417,17 +419,33 @@ ExploitProtections:
       # Enable blocks protection, like ore, from exploiting by placing and destroying same block again and again.
       # Modify restrictedBlocks.yml for blocks you want to protect
       Enabled: true
+      # Should we use new block protection method
+      # In most cases this is more efficient way to check for break/place protection and doesn't involve any cache or data saving into database
+      # Only works with 1.14+ servers
+      NewMethod: true
+      BlockTracker:
+        # Should we use BlockTracker plugin instead of built in block tracker
+        Enabled: false
       # Enabling this we will ignore blocks generated in ore generators, liko stone, coublestone and obsidian. You can still use timer on player placed obsidian block
       IgnoreOreGenerators: true
+      # Only applies when old method is used
       # For how long in days to keep block protection data in data base
       # This will clean block data which ones have -1 as cooldown value
       # Data base cleanup will be performed on each server startup
       # This cant be more then 14 days
       KeepDataFor: 14
-      # All blocks will be protected X sec after player places it on ground.
       GlobalBlockTimer:
-        Use: true
-        Timer: 3
+        # All blocks will be protected X seconds after player places it
+        Place:
+          Use: true
+          # Time in seconds. This can only be positive number and no higher than 900
+          # If higher timers are needed then it can be defined in restrictedBlocks.yml file for each specific block
+          Timer: 3
+        Break:
+          Use: true
+          # Time in seconds. This can only be positive number and no higher than 60
+          # This is only to prevent player from placing blocks into same place and getting paid once more
+          Timer: 3
       # Enable silk touch protection.
       # With this enabled players wont get paid for broken blocks from restrictedblocks list with silk touch tool.
       SilkTouchProtection: false
@@ -439,6 +457,8 @@ ExploitProtections:
       # When enabled we will avoid checking damage done to ender dragon, wither and warden
       # This can help out in case you have server with custom damage sources which might not be registered and payouts might not be given out
       IgnoreBosses: true
+    # Should tamed animals payout to their owners?
+    TameablesPayout: true
   # McMMO abilities
   McMMO:
     # Players will get part of money from cutting trees with treefeller ability enabled.
@@ -479,8 +499,10 @@ ActionBars:
     # When this set to true player will see action bar messages by default
     # When false, players will see chat messages instead.
     EnabledByDefault: true
-    # If true, should we mute the payment messages from appearing in chat if actionbar is disabled?
-    SilentMode: false
+    # Time in seconds action bar will remain visible if enabled
+    # This time is used to define for how long we will accumulate payments to be shown in action bar
+    # If no payments are being issued in defined time then it will reset to 0 and remain hidden
+    KeepFor: 5
 BossBar:
   # Enables BossBar feature
   # Works only from 1.9 mc version
@@ -488,18 +510,11 @@ BossBar:
   Messages:
     # When this set to true player will see Bossbar messages by default
     EnabledByDefault: true
-  # If enabled boss bar will update after each action
-  # If disabled, BossBar will update only on each payment. This can save some server resources
-  ShowOnEachAction: false
   # Defines in how many parts bossbar will be split visually
   # Valid options: 1, 6, 10, 12, 20
   SegmentCount: 1
   # How long in sec to show BossBar for player
-  # If you have disabled ShowOnEachAction, then keep this number higher than payment interval for better experience
   Timer: 6
-  # If enabled, bossbar creation and management will be asynchronous.
-  # This avoids TPS drops when the ShowOnEachAction option is activated.
-  Async: false
 # You can enable/disable message shown for players in action bar
 ShowActionBars:
   OnTitleChange: true

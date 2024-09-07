@@ -1,5 +1,5 @@
 # DO NOT CHANGE VERSION
-version: 1.0.25
+version: 1.0.28
 # Following are chance percent settings for each mob and variants of mobs.
 # Hieronder volgen instellingen voor het toevalspercentage voor elke mob en varianten van mobs.
 # Voici les paramÃ¨tres de pourcentage de chance pour chaque mob et les variantes de mobs.
@@ -12,6 +12,7 @@ chance_percent:
   player: 50.0
   named_mob: 10.0
   allay: 20.0
+  armadillo: 10.0
   axolotl:
     blue: 100.0
     cyan: 20.0
@@ -24,7 +25,10 @@ chance_percent:
     angry: 20.0
     pollinated: 20.0
     normal: 20.0
-  blaze: 0.5
+    chance_percent: 20.0
+  blaze: 50.0
+  bogged: 6.0
+  breeze: 10.0
   camel: 27.0
   cat:
     all_black: 33.0
@@ -38,10 +42,10 @@ chance_percent:
     siamese: 33.0
     tabby: 33.0
     white: 33.0
-  cave_spider: 0.5
-  chicken: 1.0
+  cave_spider: 50.0
+  chicken: 100.0
   cod: 10.0
-  cow: 1.0
+  cow: 100.0
   creeper: 50.0
   creeper_charged: 100.0
   dolphin: 33.0
@@ -49,7 +53,7 @@ chance_percent:
   drowned: 5.0
   elder_guardian: 100.0
   ender_dragon: 100.0
-  enderman: 0.5
+  enderman: 50.0
   endermite: 10.0
   evoker: 25.0
   fox:
@@ -65,7 +69,8 @@ chance_percent:
   goat:
     normal: 1.0
     screaming: 100.0
-  guardian: 0.5
+    mormal: 100.0
+  guardian: 50.0
   hoglin: 3.0
   horse:
     black: 27.0
@@ -83,10 +88,10 @@ chance_percent:
     creamy: 24.0
     gray: 24.0
     white: 24.0
-  magma_cube: 0.5
+  magma_cube: 50.0
   mule: 20.0
   mushroom_cow:
-    red: 1.0
+    red: 100.0
     brown: 10.0
   ocelot: 20.0
   panda:
@@ -104,10 +109,10 @@ chance_percent:
     green: 25.0
     red: 25.0
   phantom: 10.0
-  pig: 1.0
+  pig: 100.0
   piglin: 4.0
   piglin_brute: 10.0
-  pig_zombie: 0.5
+  pig_zombie: 50.0
   pillager: 2.5
   polar_bear: 20.0
   pufferfish: 15.0
@@ -144,10 +149,10 @@ chance_percent:
   silverfish: 5.0
   skeleton: 2.5
   skeleton_horse: 20.0
-  slime: 0.5
+  slime: 50.0
   sniffer: 50.0
   snowman: 5.0
-  spider: 0.5
+  spider: 50.0
   squid: 5.0
   stray: 6.0
   strider: 10.0
@@ -299,13 +304,31 @@ chance_percent:
   vindicator: 5.0
   wandering_trader: 100.0
   warden: 100.0
-  witch: 0.5
+  witch: 50.0
   wither: 100.0
   wither_skeleton: 2.5
-  wolf: 20.0
+  wolf:
+    ashen: 20.0
+    black: 20.0
+    chestnut: 20.0
+    pale: 20.0
+    rusty: 20.0
+    snowy: 50.0
+    spotted: 20.0
+    striped: 20.0
+    woods: 20.0
+    angry_ashen: 20.0
+    angry_black: 20.0
+    angry_chestnut: 20.0
+    angry_pale: 20.0
+    angry_rusty: 20.0
+    angry_snowy: 50.0
+    angry_spotted: 20.0
+    angry_striped: 20.0
+    angry_woods: 20.0
   zoglin: 20.0
   zombie: 2.5
   zombie_horse: 100.0
-  zombie_pigman: 0.5
-  zombified_piglin: 0.5
+  zombie_pigman: 50.0
+  zombified_piglin: 50.0
   zombie_villager: 50.0
